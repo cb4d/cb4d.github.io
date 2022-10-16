@@ -1,8 +1,12 @@
 ---
 layout: default
-title: "Happy Jekylling!"
+title: "root"
 ---
 
-## You're ready to go!
+[github](https://github.com/cb4d)
 
-Start developing your Jekyll website.
+[linkedin](https://www.linkedin.com/in/connor-b-ford/)
+
+[blog](/blog)
+
+

@@ -2,8 +2,8 @@
 
 $ptMono: 'PT Mono', monospace;
 
-$backgroundColor: #ffffff;
-$bodyColor: #000000;
+$backgroundColor: #222222;
+$bodyColor: #FFFFFF;
 $bodyFont: $ptMono,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
 body {
@@ -18,14 +18,20 @@ body {
   padding: 16px;
 }
 
-.center {
-  align: center
-}
-
-a:visited {
+a{
   color: $bodyColor;
 }
 
 a:hover {
-  opacity: 0.6
+  opacity: 0.6;
+}
+
+.no-bull {
+  list-style-type: none;
+}
+
+.no-bull li {
+  margin: 8px 0;
+  padding-left: 2em;
+  text-indent: -2em;
 }

@@ -9,4 +9,3 @@ title: "root"
 
 [blog](/blog)
 
-

@@ -40,3 +40,13 @@ a:hover {
   font-size: 0.8em;
 }
 
+#images-flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#images-flex img {
+  max-height: 400px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}

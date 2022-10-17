@@ -12,3 +12,7 @@ a:hover { opacity: 0.6; }
 .no-bull li { margin: 8px 0; padding-left: 2em; text-indent: -2em; }
 
 #post-meta { font-size: 0.8em; }
+
+#images-flex { display: flex; flex-flow: row wrap; }
+
+#images-flex img { max-height: 400px; margin-right: 16px; margin-bottom: 16px; }

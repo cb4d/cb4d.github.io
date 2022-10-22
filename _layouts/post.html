@@ -40,7 +40,7 @@
       {% if photos_for_date %}
         <div id="images-flex">
           {% for photo_url in site.data.google-photos[date] %}
-              <img src="{{ photo_url }}-w512" />
+              <img src="{{ photo_url }}=h512" />
           {% endfor %}
         </div>
       {% endif %}

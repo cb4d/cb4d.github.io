@@ -40,13 +40,14 @@
         {% for date in page.photo_dates %}
           {% assign photos_for_date = site.data.google-photos[date] %}
           {% for photo_url in site.data.google-photos[date] %}
-          <a href="https://photos.app.goo.gl/jLH6uExbu9FGje9r8">
-            <img src="{{ photo_url }}" />
+          <a href="https://photos.app.goo.gl/jLH6uExbu9FGje9r8" target="_blank" rel="noopener noreferrer">
+            <img src="{{ photo_url }}" onerror="this.style.display='none'" alt="" />
           </a>
           {% endfor %}
         {% endfor %}
         </div>
       {% endif %}
+      <p id="photos-link">See all photos in <a href="https://photos.app.goo.gl/jLH6uExbu9FGje9r8" target="_blank" rel="noopener noreferrer">google photos</a>.
 
 
       <div id="content">

@@ -35,15 +35,19 @@
         </p>
       </div>
 
-      {% assign date = page.date | date: "%Y-%m-%d" %}
-      {% assign photos_for_date = site.data.google-photos[date] %}
-      {% if photos_for_date %}
+      {% if page.photo_dates %}
         <div id="images-flex">
+        {% for date in page.photo_dates %}
+          {% assign photos_for_date = site.data.google-photos[date] %}
           {% for photo_url in site.data.google-photos[date] %}
-              <img src="{{ photo_url }}=h512" />
+          <a href="https://photos.app.goo.gl/jLH6uExbu9FGje9r8">
+            <img src="{{ photo_url }}" />
+          </a>
           {% endfor %}
+        {% endfor %}
         </div>
       {% endif %}
+
 
       <div id="content">
         {{ content }}

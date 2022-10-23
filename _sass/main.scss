@@ -12,12 +12,6 @@ body {
   font-family: $bodyFont;
 }
 
-#root {
-  margin: auto;
-  width: 50%;
-  padding: 16px;
-}
-
 a{
   color: $bodyColor;
 }
@@ -45,8 +39,79 @@ a:hover {
   flex-flow: row wrap;
 }
 
-#images-flex img {
-  max-height: 400px;
-  margin-right: 16px;
-  margin-bottom: 16px;
+@media only screen and (max-width: 576px) {
+  body {
+    font-size: 0.8em;
+  }
+
+  #root {
+    margin: auto;
+    width: 90%;
+    padding: 16px 5%;
+  }
+  
+  
+  #images-flex img {
+    max-height: 400px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
 }
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  body {
+    font-size: 1em;
+  }
+
+  #root {
+    margin: auto;
+    width: 70%;
+    padding: 16px 15%;
+  }
+  
+  
+  #images-flex img {
+    max-height: 400px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1280px) {
+  body {
+    font-size: 1em;
+  }
+
+  #root {
+    margin: auto;
+    width: 80%;
+    padding: 32px 10%;
+  }
+  
+  
+  #images-flex img {
+    max-height: 400px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  body {
+    font-size: 1.2em;
+  }
+
+  #root {
+    margin: auto;
+    width: 50%;
+    padding: 32px 25%;
+  }
+  
+  
+  #images-flex img {
+    max-height: 400px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+}
+

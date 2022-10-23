@@ -13,6 +13,8 @@ a:hover { opacity: 0.6; }
 
 #images-flex { display: flex; flex-flow: row wrap; }
 
+#images-flex img { max-width: 100%; }
+
 @media only screen and (max-width: 576px) { body { font-size: 0.8em; }
   #root { margin: auto; width: 90%; padding: 16px 5%; }
   #images-flex img { max-height: 400px; margin-right: 0px; margin-bottom: 16px; } }

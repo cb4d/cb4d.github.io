@@ -39,6 +39,10 @@ a:hover {
   flex-flow: row wrap;
 }
 
+#images-flex img {
+  max-width: 100%;
+}
+
 @media only screen and (max-width: 576px) {
   body {
     font-size: 0.8em;
